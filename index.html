@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ALPHA COLLECTION DATA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #8B4513;
+            font-size: 24px;
+            text-align: center;
+            padding: 20px 0;
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        #password_section, #ledger_section {
+            max-width: 600px;
+            margin: auto;
+            background-color: #FFD700;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border: 1px solid #8B4513;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #8B0000;
+        }
+        input[type=text], input[type=password] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #8B4513;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #A0522D;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #8B4513;
+            color: white;
+        }
+        input[type=text] {
+            width: calc(100% - 22px);
+            padding: 6px 10px;
+            margin: 4px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>ALPHA99</h1>
+
+<!-- Password Entry Section -->
+<div id="password_section">
+    <label for="password">Enter Password:</label>
+    <input type="password" id="password" name="password" onkeydown="if(event.keyCode==13) checkPassword()">
+    <button onclick="checkPassword()">Submit</button>
+</div>
+
+<!-- Ledger Entry Section -->
+<div id="ledger_section" style="display: none;">
+    <table>
+        <tr>
+            <th>Leader No.</th>
+            <th>Item Name</th>
+            <th>Shortcut Name</th>
+            <th>Kg/Weight</th>
+            <th>Price</th>
+        </tr>
+        <!-- Repeat this block for each ledger -->
+        <!-- Ledger 1 -->
+        <tr>
+            <td><input type="text" id="no1" name="no1"></td>
+            <td><input type="text" id="item1" name="item1"></td>
+            <td><input type="text" id="shortcut1" name="shortcut1"></td>
+            <td><input type="text" id="weight1" name="weight1"></td>
+            <td><input type="text" id="price1" name="price1"></td>
+        </tr>
+        <!-- Ledger 2 -->
+        <tr>
+            <td><input type="text" id="no2" name="no2"></td>
+            <td><input type="text" id="item2" name="item2"></td>
+            <td><input type="text" id="shortcut2" name="shortcut2"></td>
+            <td><input type="text" id="weight2" name="weight2"></td>
+            <td><input type="text" id="price2" name="price2"></td>
+        </tr>
+        <!-- Add more ledger entries as needed -->
+        <!-- Ledger 3 -->
+        <tr>
+            <td><input type="text" id="no3" name="no3"></td>
+            <td><input type="text" id="item3" name="item3"></td>
+            <td><input type="text" id="shortcut3" name="shortcut3"></td>
+            <td><input type="text" id="weight3" name="weight3"></td>
+            <td><input type="text" id="price3" name="price3"></td>
+        </tr>
+        <!-- Ledger 4 -->
+        <tr>
+            <td><input type="text" id="no4" name="no4"></td>
+            <td><input type="text" id="item4" name="item4"></td>
+            <td><input type="text" id="shortcut4" name="shortcut4"></td>
+            <td><input type="text" id="weight4" name="weight4"></td>
+            <td><input type="text" id="price4" name="price4"></td>
+        </tr>
+        <!-- Ledger 5 -->
+        <tr>
+            <td><input type="text" id="no5" name="no5"></td>
+            <td><input type="text" id="item5" name="item5"></td>
+            <td><input type="text" id="shortcut5" name="shortcut5"></td>
+            <td><input type="text" id="weight5" name="weight5"></td>
+            <td><input type="text" id="price5" name="price5"></td>
+        </tr>
+        <!-- Ledger 6 -->
+        <tr>
+            <td><input type="text" id="no6" name="no6"></td>
+            <td><input type="text" id="item6" name="item6"></td>
+            <td><input type="text" id="shortcut6" name="shortcut6"></td>
+            <td><input type="text" id="weight6" name="weight6"></td>
+            <td><input type="text" id="price6" name="price6"></td>
+        </tr>
+        <!-- Ledger 7 -->
+        <tr>
+            <td><input type="text" id="no7" name="no7"></td>
+            <td><input type="text" id="item7" name="item7"></td>
+            <td><input type="text" id="shortcut7" name="shortcut7"></td>
+            <td><input type="text" id="weight7" name="weight7"></td>
+            <td><input type="text" id="price7" name="price7"></td>
+        </tr>
+        <!-- Ledger 8 -->
+        <tr>
+            <td><input type="text" id="no8" name="no8"></td>
+            <td><input type="text" id="item8" name="item8"></td>
+            <td><input type="text" id="shortcut8" name="shortcut8"></td>
+            <td><input type="text" id="weight8" name="weight8"></td>
+            <td><input type="text" id="price8" name="price8"></td>
+        </tr>
+        <!-- Ledger 9 -->
+        <tr>
+            <td><input type="text" id="no9" name="no9"></td>
+            <td><input type="text" id="item9" name="item9"></td>
+            <td><input type="text" id="shortcut9" name="shortcut9"></td>
+            <td><input type="text" id="weight9" name="weight9"></td>
+            <td><input type="text" id="price9" name="price9"></td>
+        </tr>
+        <!-- Ledger 10 -->
+        <tr>
+            <td><input type="text" id="no10" name="no10"></td>
+            <td><input type="text" id="item10" name="item10"></td>
+            <td><input type="text" id="shortcut10" name="shortcut10"></td>
+            <td><input type="text" id="weight10" name="weight10"></td>
+            <td><input type="text" id="price10" name="price10"></td>
+        </tr>
+        <!-- Ledger 11 -->
+        <tr>
+            <td><input type="text" id="no11" name="no11"></td>
+            <td><input type="text" id="item11" name="item11"></td>
+            <td><input type="text" id="shortcut11" name="shortcut11"></td>
+            <td><input type="text" id="weight11" name="weight11"></td>
+            <td><input type="text" id="price11" name="price11"></td>
+        </tr>
+        <!-- Ledger 12 -->
+        <tr>
+            <td><input type="text" id="no12" name="no12"></td>
+            <td><input type="text" id="item12" name="item12"></td>
+            <td><input type="text" id="shortcut12" name="shortcut12"></td>
+            <td><input type="text" id="weight12" name="weight12"></td>
+            <td><input type="text" id="price12" name="price12"></td>
+        </tr>
+        <!-- Ledger 13 -->
+        <tr>
+            <td><input type="text" id="no13" name="no13"></td>
+            <td><input type="text" id="item13" name="item13"></td>
+            <td><input type="text" id="shortcut13" name="shortcut13"></td>
+            <td><input type="text" id="weight13" name="weight13"></td>
+            <td><input type="text" id="price13" name="price13"></td>
+        </tr>
+        <!-- Ledger 14 -->
+        <tr>
+            <td><input type="text" id="no14" name="no14"></td>
+            <td><input type="text" id="item14" name="item14"></td>
+            <td><input type="text" id="shortcut14" name="shortcut14"></td>
+            <td><input type="text" id="weight14" name="weight14"></td>
+            <td><input type="text" id="price14" name="price14"></td>
+        </tr>
+        <!-- Ledger 15 -->
+        <tr>
+            <td><input type="text" id="no15" name="no15"></td>
+            <td><input type="text" id="item15" name="item15"></td>
+            <td><input type="text" id="shortcut15" name="shortcut15"></td>
+            <td><input type="text" id="weight15" name="weight15"></td>
+            <td><input type="text" id="price15" name="price15"></td>
+        </tr>
+        <!-- Ledger 16 -->
+        <tr>
+            <td><input type="text" id="no16" name="no16"></td>
+            <td><input type="text" id="item16" name="item16"></td>
+            <td><input type="text" id="shortcut16" name="shortcut16"></td>
+            <td><input type="text" id="weight16" name="weight16"></td>
+            <td><input type="text" id="price16" name="price16"></td>
+        </tr>
+        <!-- Ledger 17 -->
+        <tr>
+            <td><input type="text" id="no17" name="no17"></td>
+            <td><input type="text" id="item17" name="item17"></td>
+            <td><input type="text" id="shortcut17" name="shortcut17"></td>
+            <td><input type="text" id="weight17" name="weight17"></td>
+            <td><input type="text" id="price17" name="price17"></td>
+        </tr>
+        <!-- Ledger 18 -->
+        <tr>
+            <td><input type="text" id="no18" name="no18"></td>
+            <td><input type="text" id="item18" name="item18"></td>
+            <td><input type="text" id="shortcut18" name="shortcut18"></td>
+            <td><input type="text" id="weight18" name="weight18"></td>
+            <td><input type="text" id="price18" name="price18"></td>
+        </tr>
+        <!-- Ledger 19 -->
+        <tr>
+            <td><input type="text" id="no19" name="no19"></td>
+            <td><input type="text" id="item19" name="item19"></td>
+            <td><input type="text" id="shortcut19" name="shortcut19"></td>
+            <td><input type="text" id="weight19" name="weight19"></td>
+            <td><input type="text" id="price19" name="price19"></td>
+        </tr>
+        <!-- Ledger 20 -->
+        <tr>
+            <td><input type="text" id="no20" name="no20"></td>
+            <td><input type="text" id="item20" name="item20"></td>
+            <td><input type="text" id="shortcut20" name="shortcut20"></td>
+            <td><input type="text" id="weight20" name="weight20"></td>
+            <td><input type="text" id="price20" name="price20"></td>
+        </tr>
+        <!-- Ledger 21 -->
+        <tr>
+            <td><input type="text" id="no21" name="no21"></td>
+            <td><input type="text" id="item21" name="item21"></td>
+            <td><input type="text" id="shortcut21" name="shortcut21"></td>
+            <td><input type="text" id="weight21" name="weight21"></td>
+            <td><input type="text" id="price21" name="price21"></td>
+        </tr>
+        <!-- Ledger 22 -->
+        <tr>
+            <td><input type="text" id="no22" name="no22"></td>
+            <td><input type="text" id="item22" name="item22"></td>
+            <td><input type="text" id="shortcut22" name="shortcut22"></td>
+            <td><input type="text" id="weight22" name="weight22"></td>
+            <td><input type="text" id="price22" name="price22"></td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </table>
+
+    <button onclick="saveLedger()">Save Ledger</button>
+    <button onclick="loadLedger()">View Saved Entries</button>
+</div>
+
+<script>
+    // Function to check password
+    function checkPassword() {
+        var password = document.getElementById('password').value;
+        if (password === 'ALPHA99') {
+            document.getElementById('password_section').style.display = 'none';
+            document.getElementById('ledger_section').style.display = 'block';
+            document.getElementById('no1').focus();
+        } else {
+            alert('Incorrect password! Please try again.');
+        }
+    }
+
+    // Function to save ledger entries in local storage
+    function saveLedger() {
+        var ledgerEntries = [];
+        for (var i = 1; i <= 22; i++) {
+            var entry = {
+                no: document.getElementById('no' + i).value,
+                item: document.getElementById('item' + i).value,
+                shortcut: document.getElementById('shortcut' + i).value,
+                weight: document.getElementById('weight' + i).value,
+                price: document.getElementById('price' + i).value
+            };
+            ledgerEntries.push(entry);
+        }
+        localStorage.setItem('ledgerEntries', JSON.stringify(ledgerEntries));
+        alert('Ledger entries saved successfully!');
+    }
+
+    // Function to load ledger entries from local storage
+    function loadLedger() {
+        var ledgerEntries = JSON.parse(localStorage.getItem('ledgerEntries'));
+        if (ledgerEntries) {
+            for (var i = 1; i <= 22; i++) {
+                document.getElementById('no' + i).value = ledgerEntries[i - 1].no;
+                document.getElementById('item' + i).value = ledgerEntries[i - 1].item;
+                document.getElementById('shortcut' + i).value = ledgerEntries[i - 1].shortcut;
+                document.getElementById('weight' + i).value = ledgerEntries[i - 1].weight;
+                document.getElementById('price' + i).value = ledgerEntries[i - 1].price;
+            }
+            alert('Ledger entries loaded successfully!');
+        } else {
+            alert('No saved ledger entries found!');
+        }
+    }
+</script>
+
+</body>
+</html>
+>
